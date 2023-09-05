@@ -1,0 +1,21 @@
+<div class="modal-content">
+    <div class="camera-column">
+      <div class="camera-preview" #cameraPreview>
+        <!-- Display camera preview here -->
+        <webcam
+            ngDefaultControl
+            [trigger]="invokeObservable"
+            (imageCapture)="captureImg($event)"
+            mirrorImage="never"
+            [formControl]="formControl"
+        ></webcam>
+      </div>
+      <button mat-raised-button (click)="getSnapshot()">Take Picture</button> 
+    </div>
+    <div class="image-column">
+      <div class="image-preview" *ngIf="formControl.value">
+        <!-- Display image preview here -->
+         <img [src]="'data:image/jpeg;base64,' + formControl.value.Base64" alt="Image Preview" /> 
+      </div>
+    </div>
+  </div> 

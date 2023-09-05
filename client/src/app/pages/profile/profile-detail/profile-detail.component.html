@@ -1,0 +1,32 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Edit Profile</mat-card-title>
+    </mat-card-header>
+
+    <div class="uredi-profil_two-columns_block--1">
+      <div class="profile-image-wrapper">
+          <img [src]="getImageUrl(form.get('slika'))" [className]="slikaUcitana ? '' : 'profile-image-blur'"/>
+          <div (click)="dodaj()" class="profile-image-overlay">
+              <span>Promijeni profilnu sliku</span>
+          </div>
+      </div>
+    </div>
+
+    <mat-card-content>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput type="text" name="name" formControlName="firstName" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput type="email" name="email" formControlName="email" required>
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Save</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

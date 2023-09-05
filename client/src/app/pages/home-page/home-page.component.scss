@@ -1,0 +1,32 @@
+.align-right {
+    align-items: end;
+}
+
+.main-configuration {
+    background: url('../../../../assets/images/couples-photography-afp-27.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    opacity: .7;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mat-mdc-form-field {
+    width: 100%;
+}
+
+.center-form {
+    width: 50%;
+}
+
+::ng-deep .mat-mdc-radio-button .mdc-form-field{
+    color: white !important;
+}
+
+.moja {
+    background-color: red;
+}

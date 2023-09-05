@@ -1,0 +1,19 @@
+.uredi-profil {
+  display: grid;
+
+  &__two-columns {
+      column-gap: 1rem;
+      grid-template-columns: max-content 1fr;
+      overflow: hidden;
+
+      &__block {
+          &--1 {
+              display: contents;
+          }
+
+          &--2 {
+              display: block;
+          }
+      }
+  }
+}

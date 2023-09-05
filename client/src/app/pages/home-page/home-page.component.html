@@ -1,0 +1,45 @@
+<div class="main-configuration">
+    <form [formGroup]="form" class="main-form">
+        <div class="center-form">
+            <mat-form-field class="col-12">
+                <mat-label>First name</mat-label>
+                <input type="text" formControlName="firstName" matInput  placeholder="ex. Pero">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Last name</mat-label>
+                <input type="text" formControlName="lastName" matInput  placeholder="ex. Peric">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Username</mat-label>
+                <input type="text" formControlName="userName" matInput  placeholder="ex. Pero">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input type="email" formControlName="email" matInput  placeholder="ex. pperic@examle.eu">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input type="password" formControlName="password" matInput  placeholder="******">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Date of the birth</mat-label>
+                <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="dateOfBirth">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-radio-group formControlName="sex">
+                <mat-radio-button value="M">Man</mat-radio-button>
+                <mat-radio-button value="W">Woman</mat-radio-button>
+            </mat-radio-group>
+            <div class="center">
+                <button mat-raised-button (click)="signIn()">Sign in</button>
+            </div>
+        </div>
+    </form>
+</div>

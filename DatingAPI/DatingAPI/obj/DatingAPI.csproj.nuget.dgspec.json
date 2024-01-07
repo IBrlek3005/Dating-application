@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivan\\Documents\\GitHub\\Datin-application\\DatingAPI\\DatingAPI\\DatingAPI.csproj": {}
+    "C:\\Projekti\\Dating-application\\DatingAPI\\DatingAPI\\DatingAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivan\\Documents\\GitHub\\Datin-application\\DatingAPI\\DatingAPI\\DatingAPI.csproj": {
+    "C:\\Projekti\\Dating-application\\DatingAPI\\DatingAPI\\DatingAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivan\\Documents\\GitHub\\Datin-application\\DatingAPI\\DatingAPI\\DatingAPI.csproj",
+        "projectUniqueName": "C:\\Projekti\\Dating-application\\DatingAPI\\DatingAPI\\DatingAPI.csproj",
         "projectName": "DatingAPI",
-        "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Datin-application\\DatingAPI\\DatingAPI\\DatingAPI.csproj",
-        "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Datin-application\\DatingAPI\\DatingAPI\\obj\\",
+        "projectPath": "C:\\Projekti\\Dating-application\\DatingAPI\\DatingAPI\\DatingAPI.csproj",
+        "packagesPath": "C:\\Users\\ibrlek\\.nuget\\packages\\",
+        "outputPath": "C:\\Projekti\\Dating-application\\DatingAPI\\DatingAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ibrlek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -8,7 +8,7 @@ namespace DatingAPI.Data
         public DbSet<User> User { get; set; }
         public DbSet<UserToken> Token { get; set; }
         public DbSet<RefreshToken> RefreshToken { get; set; }
-
+        public DbSet<UserDetail> UserDetails { get; set; }
         public DatingContext()
         {
 
